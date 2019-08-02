@@ -1,0 +1,6 @@
+if [ $# -eq 0 ]; then
+    echo "USAGE: video_info myFile.mp4"
+    exit 1
+fi
+
+ffmpeg -i $1 -hide_banner
